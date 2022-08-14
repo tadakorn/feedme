@@ -1,5 +1,5 @@
 <template>
-  <el-input v-model="search" placeholder="Search" />
+  <input v-model="search" type="text" class="form-control" placeholder="Search">
 </template>
 
 <script>

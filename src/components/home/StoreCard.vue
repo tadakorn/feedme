@@ -1,17 +1,15 @@
 <template>
-  <el-card :body-style="{ padding: '0px' }">
-    <img
-      src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
-      class="image"
-    />
-    <div style="padding: 14px">
-      <span>Yummy hamburger</span>
-      <div class="bottom">
-        <time class="time">{{ currentDate }}</time>
-        <el-button text class="button">Operating</el-button>
-      </div>
+  <div class="card">
+    <img src="https://assets.brandinside.asia/uploads/2019/05/58800421_10161710742705182_2993761654656729088_n.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </el-card>
+  </div>
 </template>
 
 <script>

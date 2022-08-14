@@ -1,26 +1,27 @@
 <template>
-  <main>
-    <el-row justify="center">
-      <el-col :span="12">
+  <main class="mt-4">
+    <div class="row justify-content-center">
+      <div class="col col-6">
         <SearchForm />
-      </el-col>
-    </el-row>
+      </div>
+    </div>
 
-    <el-row justify="center" class="mt-2">
-      <el-col :span="12">
+    <div v-for="n in 10" :key="n" class="row justify-content-center mt-4">
+      <div class="col col-6">
         <StoreCard />
-      </el-col>
-    </el-row>
-
-    <el-row justify="center">
-      <el-col :span="12">
-        <StoreCard />
-      </el-col>
-    </el-row>
+      </div>
+    </div>
   </main>
 </template>
 
 <script>
-// import StoreCard from '../components/home/StoreCard.vue';
-  // import SearchForm from '@/components/home/SearchForm.vue'
+import StoreCard from '../components/home/StoreCard.vue';
+import SearchForm from '@/components/home/SearchForm.vue'
+
+export default {
+  components: {
+    SearchForm,
+    StoreCard
+  }
+}
 </script>
